@@ -1,0 +1,26 @@
+package FileoutputnputIO;
+
+import java.io.FileReader;
+import java.io.IOException;
+
+public class FileReaderDemo {
+	
+	public static void main(String[] args) {
+		
+		try(FileReader reader = new FileReader("Demo.txt")) {
+			
+			int data;
+			
+			while((data = reader.read())!=-1) {
+				System.out.print((char)data);
+			}
+			
+		}
+		catch(IOException e){
+			
+			e.printStackTrace();
+			
+		}
+	}
+
+}
