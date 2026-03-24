@@ -1,0 +1,25 @@
+package lambda;
+
+public class DemoLambda {
+	
+	public static void main(String[] args) {
+		
+		Demo sum = (x,y)->{return x+y;};
+		
+		
+		System.out.println(sum.CALCULTOR(24,23));
+		
+		
+		Demo sub = (x,y)->{return x-y;};
+		
+		System.out.println("Sub : x-y : "+ sub.CALCULTOR(24, 25));
+		
+		
+		Demo multiply  = (x,y)->{return x*y;};
+		
+		System.out.println("multiply : "+multiply.CALCULTOR(24, 25));
+		
+		
+	}
+
+}
